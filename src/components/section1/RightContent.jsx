@@ -2,8 +2,21 @@ import React from 'react'
 import RightCard from './RightCard'
 
 const RightContent = (props) => {
+
+  const handleWheel = (e) =>{
+    e.preventDefault()
+
+    const container=e.currentTarget
+    const scrollAmount = e.deltaY*0.7
+
+    container.scrollBy({
+      left:scrollAmount,
+      behavior:'smooth'
+    })
+  }
+
   return (
-    <div id='right' className='h-full -mt-14 flex flex-nowrap gap-10 overflow-x-auto rounded-4xl p-5'>
+    <div id='right' onWheel={handleWheel} className='h-full min-w-0 -mt-14 flex flex-nowrap gap-10 overflow-x-auto rounded-4xl p-5'>
       {props.user.map(function(elem,idx){
         return <RightCard key={idx} id={idx} img={elem.img} tag={elem.tag} intro={elem.intro}/>
       })}
