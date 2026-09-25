@@ -9,7 +9,7 @@ const RightCardContext = (props) => {
             <div>
                 <p  className=' text-shadow-2xl text-white mb-10 text-xl'>{props.intro}</p>
                 <div className='flex justify-between'>
-                    <button className='bg-[#2457E6] text-white px-6 py-2 rounded-full '>{props.tag} </button>
+                    <button className='bg-[#2457E6] text-white px-4 sm:px-5 lg:px-6 py-2 rounded-full text-sm sm:text-base whitespace-nowrap'>{props.tag} </button>
                 </div>
             </div>
         </div>
