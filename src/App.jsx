@@ -24,17 +24,17 @@ const App = () => {
     }
   ]
   return (
-    <div id='body' className='min-h-screen flex flex-col overflow-hidden bg-[#A8B0BE] items-center justify-center '>
-      <div className='w-full ml-100 h-110 flex gap-10'>
-        <div className='flex items-center gap-4'>
-          <img src="/profile-image.png" alt="Profile" className='w-50 h-50 rounded-full object-cover'/>
-          <div className=''>
-            <h2 className='text-8xl font-bold tracking-tight text-gray-800'>PRESENTATION DESIGN</h2>
-            <p className='text-4xl text-gray-700'>Простая React-страница, созданная с использованием Js tg: @poorvik__</p>
+    <div id='body' className='min-h-screen flex flex-col overflow-hidden bg-[#A8B0BE] items-center justify-center'>
+      <div className='w-full h-auto lg:ml-100 lg:h-110 flex px-6 lg:px-0 py-8 lg:py-0 gap-10'>
+        <div className='flex flex-col lg:flex-row lg:items-center w-full items-center gap-4'>
+          <img src="/profile-image.png" alt="Profile" className='w-32 h-32 lg:w-50 lg:h-50 rounded-full object-cover'/>
+          <div className='text-center lg:text-left'>
+            <h2 className='text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800'>PRESENTATION DESIGN</h2>
+            <p className='text-xl sm:text-2xl lg:text-4xl text-gray-700'>Простая React-страница, созданная с использованием Js tg: @poorvik__</p>
           </div>
         </div>
       </div>
-      <div className='w-[95%] h-[85vh] sm:w-[92%] lg:w-[90%] bg-white px-10 py-15 mb-15 overflow-hidden shadow-2xl' >
+      <div className='w-[95%] h-auto sm:w-[92%] lg:w-[90%] bg-white px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-15 mb-15 overflow-hidden shadow-2xl' >
         <Section1 user={user}/> 
       </div>
     </div>

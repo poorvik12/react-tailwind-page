@@ -5,7 +5,7 @@ import Page1Content from './Page1Content'
 const Section1 = (props) => {
   
   return (
-    <div className='h-screen w-full '>
+    <div className='h-auto w-full '>
       <Navbar />
       <Page1Content user={props.user} />
     </div>
